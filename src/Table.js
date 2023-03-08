@@ -27,13 +27,6 @@ function Table({ columns, data }) {
 
     return (
         <div>
-            <div className="search-container">
-                <input
-                    type="text"
-                    value={globalFilter || ''}
-                    onChange={(e) => setGlobalFilter(e.target.value)}
-                />
-            </div>
             <table {...getTableProps()}>
             <thead>
                 {headerGroups.map(headerGroup => (
